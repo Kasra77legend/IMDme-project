@@ -1,0 +1,92 @@
+.box-office {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+  margin-bottom: 10px;
+}
+
+.box-office-container{
+  width: 100%;
+  padding-left: 20px;
+  margin: 10px 0;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: start;
+}
+
+.box-office-container .box-office-title {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-office-container > p{
+  color: #B3B3B3;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.box-office-container .box-office-title > span {
+  color: #f5c518;
+  font-size: 39px;
+  font-weight: 1000;
+  margin-right: 14px;
+  margin-bottom: 23px;
+}
+
+.box-office-container .box-office-title > h2 {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.box-office-container .box-office-content{
+  width: 100%;
+  height: 160px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.box-office-container .box-office-content .box-office-options{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.box-office-container .box-office-content .box-office-options h3{
+  font-size: 16px;
+  color: white;
+}
+
+.box-office-container .box-office-content .box-office-options span{
+  font-size: 16px;
+  color: #f5c518;
+}
+
+.box-office-container .box-office-content .box-office-options .box-office-det{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: start;
+  gap: 3px;
+}
+
+.box-office-container .box-office-content .box-office-options .box-office-det h2{
+  font-size: 16px;
+  color: white;
+}
+
+.box-office-container .box-office-content .box-office-options .box-office-det h3{
+  font-size: 12px;
+  color: #ADB0B3;
+}

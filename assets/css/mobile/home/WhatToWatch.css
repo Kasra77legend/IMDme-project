@@ -1,0 +1,108 @@
+.what-to-watch {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.what-to-watch-II {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+  margin-bottom: 30px;
+}
+
+.what-to-watch-container {
+  padding: 0 10px;
+  margin: 20px 0;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: start;
+}
+
+.what-to-watch-container .what-to-watch-title {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.what-to-watch-title > h2 {
+  color: #f5c518;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.what-to-watch-title > h3 {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  width: 210px;
+  color: #5799EF;
+  font-size: 14px;
+}
+
+.what-to-watch-container .what-to-watch-list {
+  margin-top: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.what-to-watch-container .what-to-watch-list span {
+  color: #f5c518;
+  font-size: 22px;
+  font-weight: 1000;
+  margin-right: 5px;
+  margin-bottom: 23px;
+}
+
+.what-to-watch-container .what-to-watch-list h2 {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.what-to-watch-signin {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.what-to-watch-container .what-to-watch-signin h3 {
+  max-width: 200px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.what-to-watch-container .what-to-watch-signin h4 {
+  max-width: 235px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.what-to-watch-container .what-to-watch-signin button {
+  margin-top: 40px;
+  color: #4F99EF;
+  font-size: 14px;
+  font-weight: 200;
+  padding: 8px 20px;
+  background-color: #2e2e2e;
+  border-style: none;
+  border-radius: 100px;
+}

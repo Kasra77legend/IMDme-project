@@ -1,0 +1,23 @@
+@import url(./home/header.css);
+@import url(./home/nav.css);
+@import url(./home/boxOffice.css);
+@import url(./home/banner.css);
+@import url(./home/slider.css);
+@import url(./home/FeaturedToday.css);
+@import url(./home/MostPopular.css);
+@import url(./home/WhatToWatch.css);
+@import url(./home/TopTen.css);
+@import url(./home/PopularInterests.css);
+@import url(./home/exclusive.css);
+@import url(./home/MoreExplore.css);
+@import url(./home/BornToday.css);
+@import url(./home/news.css);
+@import url(./home/recent.css);
+@import url(./home/Footer.css);
+
+.desktop{
+    display: none;
+}
+.tablet{
+    display: none;
+}

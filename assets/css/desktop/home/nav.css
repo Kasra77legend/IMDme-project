@@ -1,0 +1,88 @@
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+}
+
+.nav-container-desktop {
+    background-color: #1F1F1F;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 40px;
+    position: fixed;
+    left: 0;
+    top: -100%;
+    left: 0;
+    z-index: 2;
+    transition: 400ms;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+.OpenNav{
+    top: 0;
+}
+
+.nav-container-desktop .menu-top{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 900px;
+}
+
+.nav-container-desktop .menu-top .menu-logo img{
+    cursor: pointer;
+    width: 98px;
+}
+
+.nav-container-desktop .menu-top .close-nav-desktop{
+    cursor: pointer;
+}
+
+.nav-container-desktop .menu-bottom{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 170px;
+}
+
+.nav-container-desktop .menu-bottom .menu-list{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: start;
+    gap: 140px;
+}
+
+.nav-container-desktop .menu-bottom .menu-list h2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.nav-container-desktop .menu-bottom .menu-list ul{
+    cursor: pointer;
+    margin-left: 40px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+    font-size: 16px;
+    color: white;
+}

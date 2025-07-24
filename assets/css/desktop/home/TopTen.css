@@ -1,0 +1,174 @@
+.top-ten{
+    margin-top: 26px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .top-ten-container{
+    width: 74vw;
+    min-width: 999px;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: start;
+  }
+  
+  .top-ten-container .top-ten-title{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top-ten-container > p{
+    color: #B3B3B3;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .top-ten-container .top-ten-column-title{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top-ten-container .top-ten-title > span{
+    cursor: pointer;
+    color: #F5C518;
+    font-size: 32px;
+    font-weight: 1000;
+    margin-right: 14px;
+    margin-bottom: 16px;
+  }
+
+  .top-ten-container .top-ten-title > h2{
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+  }
+
+  .top-ten-container .top-ten-column-title > h4{
+    cursor: pointer;
+    padding: 20px;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 16px;
+    border-bottom: 3px solid #5799EF;
+  }
+
+  .top-ten-container .top-ten-column-title > h5{
+    color: white;
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  
+  .top-ten-container > h3{
+    color: #f5c518;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+
+  .top-ten-container .swiper-slide{
+    cursor: pointer;
+    position: relative;
+  }
+
+  .top-ten-container .swiper-slide img{
+    width: 12vw;
+    min-width: 151px;
+    border-top-right-radius: 8px;
+  }
+
+  .top-ten-container .swiper-slide > svg{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+
+  .top-ten-container .swiper-slide .card-info{
+    width: 12vw;
+    min-width: 151px;
+    background-color: #1A1A1A;
+    padding: 10px;
+    color: whitesmoke;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  .top-ten-container .swiper-slide .card-info .star-part{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .top-ten-container .swiper-slide .card-info .star-part > button{
+    background-color: #1A1A1A;
+    border-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top-ten-container .swiper-slide .card-info .movie-info{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .top-ten-container .swiper-slide .card-info .movie-info h3{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-height: 39px;
+    text-align: start;
+    font-size: 16px;
+    font-weight: 200;
+  }
+
+  
+  .top-ten-container .swiper-slide .card-info .whatchlist{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top-ten-container .swiper-slide .card-info .whatchlist button{
+    width: 100%;
+    padding: 5px 10px;
+    background-color: #2C2C2C;
+    color: #3d65e7;
+    border-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    gap: 5px;
+  }
+
+
+  .top-ten-container .swiper-slide .card-info .trailer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    gap: 10px;
+  }

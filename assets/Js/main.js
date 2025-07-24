@@ -1,6 +1,6 @@
 // js/main.js
 
-import { setupNavigation } from "./Navigation.js";
+
 import { setupBackToTop } from "./BackToTop.js";
 import { setupSignInNotification } from "./SignInNotfication.js";
 import { fetchBanner } from "./Banner.js";
@@ -27,9 +27,9 @@ import { fetchNews } from "./news.js";
 fetchNews()
 import { fetchRecent } from "./Recent.js";
 fetchRecent()
-import { lockScroll, unlockScroll } from "./utils.js";
 lockScroll()
 unlockScroll()
+import { setupNavigation } from "./Navigation.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   setupNavigation();

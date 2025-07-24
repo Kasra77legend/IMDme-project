@@ -27,6 +27,9 @@ import { fetchNews } from "./news.js";
 fetchNews()
 import { fetchRecent } from "./Recent.js";
 fetchRecent()
+import { lockScroll, unlockScroll } from "./utils.js";
+lockScroll()
+unlockScroll()
 
 document.addEventListener("DOMContentLoaded", () => {
   setupNavigation();

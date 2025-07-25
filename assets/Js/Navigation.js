@@ -1,64 +1,31 @@
 // js/navigation.js
 
-function setupnav(){
-    // mobile navbar apear code
-let MobileMenu = document.querySelector(".nav-container-mobile");
-let MobileOpenButton = document.querySelector("#open-mobile-nav");
-let MobileCloseButton = document.querySelector(".close-nav-mobile");
+import { lockScroll, unlockScroll } from './utils.js';
 
-function lockScroll() {
-    document.documentElement.style.overflow = 'hidden';
-    document.body.style.overflow = 'hidden';
-  }
-  
-  
-  function unlockScroll() {
-    document.documentElement.style.overflow = '';
-    document.body.style.overflow = '';
-  }
+function initializeNav(openBtnId, closeBtnSelector, menuSelector) {
+    const openButton = document.querySelector(openBtnId);
+    const closeButton = document.querySelector(closeBtnSelector);
+    const menu = document.querySelector(menuSelector);
 
+    if (openButton && closeButton && menu) {
+        openButton.addEventListener("click", () => {
+            menu.classList.add("OpenNav");
+            lockScroll();
+        });
 
-MobileOpenButton.addEventListener("click",function(){
-    MobileMenu.classList.add("OpenNav")
-    lockScroll()
-})
-
-MobileCloseButton.addEventListener("click",function(){
-    MobileMenu.classList.remove("OpenNav")
-    unlockScroll()
-})
-
-
-// tablet navbar apear code
-let TabletMenu = document.querySelector(".nav-container-tablet");
-let TabletOpenButton = document.querySelector("#open-tablet-nav");
-let TabletCloseButton = document.querySelector(".close-nav-tablet");
-
-TabletOpenButton.addEventListener("click",function(){
-    TabletMenu.classList.add("OpenNav")
-    lockScroll()
-})
-
-TabletCloseButton.addEventListener("click",function(){
-    TabletMenu.classList.remove("OpenNav")
-    unlockScroll()
-})
-
-
-// desktop navbar apear code
-let DesktopMenu = document.querySelector(".nav-container-desktop");
-let DesktopOpenButton = document.querySelector("#open-desktop-nav");
-let DesktopCloseButton = document.querySelector(".close-nav-desktop");
-
-DesktopOpenButton.addEventListener("click",function(){
-    DesktopMenu.classList.add("OpenNav")
-    lockScroll()
-})
-
-DesktopCloseButton.addEventListener("click",function(){
-    DesktopMenu.classList.remove("OpenNav")
-    unlockScroll()
-})
+        closeButton.addEventListener("click", () => {
+            menu.classList.remove("OpenNav");
+            unlockScroll();
+        });
+    }
 }
 
-export default setupnav();
+export function setupNavigation() {
+    if (window.matchMedia("(max-width: 767px)").matches) {
+        initializeNav("#open-mobile-nav", ".close-nav-mobile", ".nav-container-mobile");
+    } else if (window.matchMedia("(min-width: 768px) and (max-width: 1023px)").matches) {
+        initializeNav("#open-tablet-nav", ".close-nav-tablet", ".nav-container-tablet");
+    } else if (window.matchMedia("(min-width: 1024px)").matches) {
+        initializeNav("#open-desktop-nav", ".close-nav-desktop", ".nav-container-desktop");
+    }
+}

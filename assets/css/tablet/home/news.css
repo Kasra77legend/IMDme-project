@@ -69,6 +69,7 @@
 }
 
 .news-container .swiper-slide .news-info p {
+  max-width: 188px;
   text-align: start;
   color: white;
   font-size: 12px;

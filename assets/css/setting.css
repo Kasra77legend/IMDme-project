@@ -1,15 +1,37 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: 'Amazon Ember', Arial, sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Amazon Ember", Arial, sans-serif;
 }
 
-#arrow{
-    display: flex;
-    flex-flow: row;
-    justify-content: start;
-    align-items: center;
+#arrow {
+  display: flex;
+  flex-flow: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.swiper-button-next::after {
+  position: absolute;
+  right: 0;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 28px !important;
+  font-weight: 900;
+}
+
+.swiper-button-prev::after {
+  position: absolute;
+  left: 0;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 28px !important;
+  font-weight: 900;
 }
